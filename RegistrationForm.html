@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <fieldset>
+        <form method="POST" action="https://bit.ly/3jYEMQd">
+            <!--     Header     -->
+            <h1><strong>Registration Form</strong></h1>  
+
+            <!--     Username     -->
+            <label for="username">Username: </label>
+            <input type ="text" name="username" id="username" size="15">
+            <br>
+            
+            <!--     Password     -->
+            <label for="password">Password: </label>
+            <input type="password" name="pw" id="pw" size="15">
+            <br><br>
+            
+            <!--     Gender     -->
+            <input type="radio" name="gender" id="genderm" value="M">
+            <label for="genderm">Male </label>
+            <input type="radio" name="gender" id="genderf" value="F">
+            <label for="genderf">Female </label>
+            <br><br>
+
+           <!--     Terms     -->
+            <label for="terms">Click to accept our terms </label>
+            <input type="checkbox" name="terms" id="terms" value="Terms">
+            <br><br>
+            
+            <!--    Options    -->
+            <select name="referral" id="referral">
+                <option value="0">--Please Choose--</option>
+                <option value="wom">Word of Mouth</option>
+                <option value="other">Other</option>
+                <optgroup label="Search Engine">
+                    <option value="Google">Google</option>
+                    <option value="Yahoo">Yahoo</option>
+                    <option value="MSN">MSN</option>
+                </optgroup>
+                
+            </select>
+            <br><br>
+
+            <!---    Text area    -->
+            <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
+            <br>
+
+            <!---    Hidden    -->
+            <input type="hidden" name="emailMe" id="emailMe" value="dlmalhao@gmail.com">
+            
+            <!--     Submit / Reset buttons     -->
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            
+        </form>
+    </fieldset>
+        
+</body>
+</html>
