@@ -6,21 +6,24 @@
     <title>Form</title>
 </head>
 <body>
-    
-   <!---    Header    -->
-    <header>
         <h1><strong>Registration Form</strong></h1>
-    </header>
+    
+            <form method="POST" action="form.html"></form>
 
-    <!---    Form    -->
-
-    <form method="POST" action="form.html"></form>
-    <fieldset>
-        
-        <!---    Name    -->
-        <legend>Personal Info</legend>
-        <label for="Name">Name</label>
-        <input type="text" name="Name" id="text" size="15" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" required>
-    </fieldset>
+  
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <div>
+                     <label for="Name">Name</label>
+                        <input type="text" name="Name" id="text" size="15" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" required>   
+                    </div>
+                    <div>
+                    <label for="member">Member</label>
+                    <input type="radio" name="membership" value="member" id="member"> 
+                    <label for="non-member">Non-Member</label>
+                    <input type="radio" name="membership" value="non-member" id="non-member"> 
+                    </div>
+                
+                </fieldset>
 </body>
 </html>
